@@ -246,15 +246,20 @@ body
 		font-size: 18px
 		color: #2F2E2E
 .portfolio
+	padding-bottom: 85px
 	.portfolio__in
 		@extend %in
 	.portfolio__list
+		+clr
+		margin-left: -30px
+	.portfolio__col
+		width: 288px
+		margin-left: 30px
+		float: left
 		ul
 			font-size: 0
-			margin-left: -30px
 		li
 			width: 288px
-			margin-left: 30px
 			margin-bottom: 30px
 			border: 1px solid #e5e5d2
 			border-radius: 2px
@@ -287,5 +292,126 @@ body
 		font-size: 18px
 		color: #2F2E2E
 		+ps
-	
-	
+	.portfolio__more
+		text-align: center
+		position: relative
+		.wrap-portfolio__morelink
+			display: inline-block
+			padding: 0 20px
+			background: #f1f1e5
+			position: relative
+			z-index: 200
+		.portfolio__morelink
+			display: inline-block
+			line-height: 1
+			font-size: 23px
+			color: #0079e0
+			+ps
+			font-weight: normal
+			text-decoration: none
+			border-bottom: 1px dotted #0079e0
+			cursor: pointer
+			&:hover
+				color: #345F83
+				border-color: #345F83  
+		.portfolio__morediveder
+			width: 100%
+			height: 1px
+			background: #e5e5d2
+			position: absolute
+			top: 13px
+			left: 0
+			right: 0
+			z-index: 100
+.slide
+	height: 400px
+	background: url("../img/slide.jpg")
+	background-attachment: fixed
+	+cover
+	position: relative
+	.slide__overlay
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		background: rgba(#000, .3)
+		z-index: 100
+	.slide__in
+		@extend %in
+	.slide__descr
+		padding-top: 105px
+		color: #FFF
+		position: relative
+		z-index: 200
+		text-align: center
+	.slide__text
+		margin-bottom: 50px
+		font-weight: bold
+		font-size: 40px
+		line-height: 1.2
+		position: relative
+		&:after
+			content: ""
+			width: 8px
+			height: 8px
+			border-radius: 50%
+			background: #FFF
+			position: absolute
+			bottom: -30px
+			left: 50%
+	.slide__content
+		font-weight: bold
+		font-size: 23px
+		p
+.actuality
+	background: #FFF 
+	padding: 70px 0 80px
+	.actuality__in
+		@extend %in
+	.actuality__list
+		ul
+			+clr
+		li
+			height: 170px
+			padding-left: 105px
+			float: left
+			position: relative
+			&:before
+				content: ""
+				display: inline-block
+				vertical-align: middle
+			&.actuality__list-1
+				&:before
+					width: 98px
+					height: 98px
+					background: url("../img/ico1.jpg") 
+			&.actuality__list-2
+				&:before
+					width: 90px
+					height: 90px
+					background: url("../img/ico2.jpg") 
+			&.actuality__list-3
+				&:before
+					width: 96px
+					height: 96px
+					background: url("../img/ico3.jpg") 
+			&.actuality__list-4
+				&:before
+					width: 100px
+					height: 82px
+					background: url("../img/ico4.jpg") 
+		.actuality__listdescr
+			margin-left: 30px
+			display: inline-block
+			vertical-align: middle
+		.actuality__listcontent
+			font-size: 18px
+			color: #2f2e2e
+			+ps 
+		.actuality__listmeta
+			font-size: 24px
+			color: #2f2e2e
+			+psb
+
