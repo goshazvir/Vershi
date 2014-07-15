@@ -6,6 +6,22 @@ head.ready(function() {
 	}
 	height();
 
+	$(".js-blog").click(function (){
+	  var page = $(this).attr("href");
+	  $('html, body').animate({
+	   scrollTop: $(page).offset().top
+	  }, 500);
+	  return false;
+	 });
+
+	$(".js-communication").click(function (){
+	  var page = $(this).attr("href");
+	  $('html, body').animate({
+	   scrollTop: $(page).offset().top
+	  }, 500);
+	  return false;
+	 });
+	
 	// RESIZE
 	$(window).resize(function(){
 	  height();

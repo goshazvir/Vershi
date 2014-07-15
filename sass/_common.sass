@@ -44,6 +44,21 @@ body
 	color: #424242
 	text-align: center
 	position: relative
+	&.title_mod
+		margin-bottom: 0px
+		padding-bottom: 10px
+		&:after
+			bottom: -90px
+		&:hover
+			h2, a
+				color: #0079E0
+				border-bottom: 1px solid #0079E0
+		h2, a
+			display: inline-block
+			line-height: 1
+			color: #424242 
+			text-decoration: none
+			border-bottom: 1px solid #424242
 	&:after
 		content: ""
 		width: 8px
@@ -53,12 +68,13 @@ body
 		position: absolute
 		bottom: 40px
 		left: 50%
-		// margin-left: -4px
 	h2
 		+ptb
 		font-size: 40px
 		color: #424242
 		text-align: center
+.wrap
+	background: #FFF 
 // Header
 // --------------------------------------------------
 .header
@@ -171,7 +187,7 @@ body
 	top: 30px
 	left: 50%
 	margin-left: -69px
-.blog
+.in-blog
 	height: 34px
 	line-height: 34px
 	padding: 0px 12px
@@ -194,8 +210,128 @@ body
 		color: #A3FF99 
 // Footer
 // --------------------------------------------------
-
-
+.footer
+	padding-top: 70px
+	background: #1A3435
+	.footer__in
+		@extend %in
+	.footer__meta
+		margin-bottom: 85px
+		text-align: center
+		font-size: 23px
+		+ps
+		color: #9EE4E7 
+	.title
+		a,h2
+			color: #FFF
+			text-decoration: none
+			border-bottom: none
+		&:hover
+			color: #FFF
+			border-bottom: none
+			a,h2
+				color: #FFF
+				border-bottom: none
+.form
+	.form__message
+	.form__messagein
+		margin-bottom: 50px
+		height: 70px
+		line-height: 70px
+		background: #244344
+		border: 1px solid #315556
+		border-radius: 3px
+		text-align: center
+		+psi
+		font-size: 18px
+		color: #5A9B9D
+		position: relative
+		.cross
+			position: absolute
+			right: 25px
+			top: 50%
+			margin-top: -7px
+	.form__row
+		+clr
+	.form__col
+		float: left
+	.form__col1
+		width: 395px
+		margin-right: 70px
+	.form__col2
+		width: 465px
+	.form__label
+		margin-bottom: 30px
+		&.form__labelsend
+			text-align: right
+	.form__labellong
+		margin-bottom: 40px
+	.form__send
+		display: inline-block
+		padding: 11px 15px
+		border: 2px solid #60f239
+		border-radius: 5px
+		background: transparent
+		color: #60F239
+		font-size: 18px
+		+ps
+		+transition(all linear 0.2s)
+		&:hover
+			background: #60F239
+			color: #000
+			+transition(all linear 0.2s)
+		&:active
+			background: #50D72C
+	.form__tel
+		+ps
+		font-size: 30px
+	.form__mail
+		font-size: 30px
+		color: #56D838
+		+ps
+		&:hover
+			color: #90E38A
+			a
+				color: #90E38A
+		a
+			font-size: 30px
+			color: #56D838
+			+ps
+			text-decoration: underline
+	.form__director
+		+ps
+		font-size: 18px
+		color: #fff 
+		a
+			color: #56D838
+			text-decoration: underline
+			&:hover
+				color: #90E38A
+	.form__social
+		+clr
+		li
+			margin-right: 20px
+			float: left
+			&.ve
+				a
+					+s(ve2)
+					&:hover
+						+sp(ve2_h)
+			&.tw
+				a
+					+s(tw2)
+					&:hover
+						+sp(tw2_h)
+		a
+			display: block
+.copy
+	height: 50px
+	line-height: 50px
+	background: #122425
+	font-size: 16px
+	+ps
+	text-align: center
+	color: #2B4D4E 
 // PAGE
 // --------------------------------------------------
 .wecan
@@ -367,7 +503,7 @@ body
 		p
 .actuality
 	background: #FFF 
-	padding: 70px 0 80px
+	padding: 70px 0
 	.actuality__in
 		@extend %in
 	.actuality__list
@@ -414,4 +550,130 @@ body
 			font-size: 24px
 			color: #2f2e2e
 			+psb
+.twitter
+	text-align: center
+	margin-bottom: 50px
+	.twitter__in
+		display: inline-block
+		@extend %in
+		height: 120px
+		line-height: 120px
+		border-radius: 60px
+		background: #1CB7EB
+		text-align: center
+		text-decoration: none
+		position: relative
+		&:after
+			content: ""
+			width: 64px
+			height: 64px
+			background: url("../img/tw.png") 
+			position: absolute
+			top: 50%
+			margin-top: -32px
+			left: 32px
+		&:hover
+			&:after
+				width: 96px
+				height: 96px
+				background: url("../img/tw_h.png") no-repeat
+				margin-top: -48px
+				left: 16px
+	.twitter__meta
+		font-size: 23px
+		color: #FFF 
+		+psi
+	.twitter__descr, .twitter__link
+		display: inline-block
+	.twitter__link
+		margin-right: 5px
+		color: #c7ffb1
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+.blog
+	padding-bottom: 90px
+	.blog__in
+		@extend %in
+	.blog__meta
+		font-size: 23px
+		color: #6B6B6B
+		text-align: center
+		+ptb
+	.blog__row
+		margin-top: 90px
+		margin-left: -30px
+		+clr
+	.blog__col
+		width: 290px
+		margin-left: 30px
+		float: left
+	.blog__item
+		padding: 35px 40px
+		border: 6px solid #d3f4b1
+		border-radius: 10px
+		position: relative
+		&:after
+			content: ""
+			top: -26px
+			left: 140px
+			position: absolute
+			+arr(23, 23, #d3f4b1, bottom-left)
+		&:hover
+			border-color: #bee7ff
+			&:after
+				+arr(23, 23, #bee7ff, bottom-left)
+			.blog__itemtitle
+				text-decoration: underline
+		&.blog__item_first
+			&:after
+				+arr(23, 23, #d3f4b1, bottom-right)
+				left: auto 
+				right: 50px
+			&:hover
+				&:after
+					+arr(23, 23, #bee7ff, bottom-right)
+	.blog__itemtitle
+		font-size: 24px
+		line-height: 1.2 
+		+ps
+		color: #0079E0 
+.date
+	margin-bottom: 10px
+	font-size: 18px
+	+psi
+	color: #9C9C9C
+.cross
+	+s(cross)
+	cursor: pointer
+.input, .textarea
+	background: #D2F9C7 
+	border-radius: 3px
+	color: #818181
+	font-size: 18px
+	+ps
+	&:focus
+		background: #FFF
+		color: #000 
+		+placeholder
+			color: transparent
+	+placeholder
+		color: #818181
+		font-size: 18px
+		+ps
+.input
+	width: 355px
+	padding: 10px 20px
+	font-size: 18px
+	line-height: 1.2
+	color: #818181
+.textarea
+	width: 353px
+	min-height: 80px
+	padding: 10px 20px
+	resize: vertical
+	
+	
+	
+
 
