@@ -66,8 +66,9 @@ body
 		background: #b3b3b3 
 		border-radius: 50%
 		position: absolute
-		bottom: 40px
+		bottom: 44px
 		left: 50%
+		margin-left: -4px
 	h2
 		+ptb
 		font-size: 40px
@@ -86,12 +87,12 @@ body
 		position: relative
 		@extend %in
 	.header__descr
-		height: 420px
+		height: 340px
 		position: absolute
 		left: 0
 		right: 0
 		top: 50%
-		margin-top: -210px
+		margin-top: -170px
 		&:after
 			content: ""
 			width: 546px
@@ -115,6 +116,7 @@ body
 		right: 0
 		left: 0
 		background: #282828
+		border-radius: 2px 2px 0 0
 		text-align: center
 	.header__contactlink
 		border-bottom: 1px dotted #18ff00
@@ -162,6 +164,7 @@ body
 		.header__social-tw
 			background: #1cb7eb
 			a
+				border-radius: 0 2px 0 0
 				&:after
 					content: ""
 					position: absolute
@@ -171,10 +174,12 @@ body
 					margin-left: -13px
 					+s(tw)
 				&:hover
+					border-radius: 0 0px 0 0
 					&:before
 						content: ""
 						height: 10px
-						background: #1cb7eb 
+						background: #1cb7eb
+						border-radius: 0 2px 0 0
 						position: absolute
 						top: -10px
 						left: 0
@@ -188,15 +193,16 @@ body
 	left: 50%
 	margin-left: -69px
 .in-blog
-	height: 34px
-	line-height: 34px
-	padding: 0px 12px
+	height: 35px
+	line-height: 33px
+	padding: 0px 8px 0 16px
 	position: absolute
 	top: 50px
 	right: 0
 	background: rgba(#000, .3)
-	border-radius: 3px 0px 0px 3px
+	border-radius: 3px 2px 2px 3px
 	text-decoration: underline
+	font-size: 18px
 	color: #18FF00
 	+ps
 	&:after
@@ -207,11 +213,14 @@ body
 		right: -16px
 		+arr(16,34, rgba(#000, .3), right)
 	&:hover
-		color: #A3FF99 
+		color: #A3FF99
+		background: rgba(#000, .4)
+		&:after
+			+arr(16,34, rgba(#000, .4), right)
 // Footer
 // --------------------------------------------------
 .footer
-	padding-top: 70px
+	padding-top: 58px
 	background: #1A3435
 	.footer__in
 		@extend %in
@@ -285,6 +294,7 @@ body
 	.form__tel
 		+ps
 		font-size: 30px
+		color: #FFF 
 	.form__mail
 		font-size: 30px
 		color: #56D838
@@ -335,12 +345,14 @@ body
 // PAGE
 // --------------------------------------------------
 .wecan
-	margin-bottom: 60px
+	margin-bottom: 48px
 	.wecan__in
 		@extend %in
-		padding-top: 80px
+		padding-top: 56px
 		background: #fff
+		border-radius: 0 0 2px 2px
 		border: 1px solid #e5e5d2
+		+box-shadow(0px 1px 0 #e5e5d2)
 		border-top: none
 	.wecan__list
 		ul
@@ -348,7 +360,7 @@ body
 		li
 			width: 310px
 			padding-top: 210px
-			padding-bottom: 50px
+			padding-bottom: 86px
 			float: left
 			text-align: center
 			position: relative
@@ -399,6 +411,8 @@ body
 			margin-bottom: 30px
 			border: 1px solid #e5e5d2
 			border-radius: 2px
+			+box-shadow(0 1px 0 #e5e5d2)
+			border-radius: 2px
 			display: inline-block
 			vertical-align: top
 		a
@@ -412,8 +426,9 @@ body
 		width: 288px
 		height: 220px
 		overflow: hidden
-		img
-			max-width: 100%
+		border-radius: 2px 2px 0 0
+		// img
+		// 	max-width: 100%
 	.portfolio__content
 		padding: 20px 25px
 		background: #FFF 
@@ -472,7 +487,7 @@ body
 		bottom: 0
 		left: 0
 		right: 0
-		background: rgba(#000, .3)
+		background: rgba(#000, .7)
 		z-index: 100
 	.slide__in
 		@extend %in
@@ -503,7 +518,7 @@ body
 		p
 .actuality
 	background: #FFF 
-	padding: 70px 0
+	padding: 58px 0 70px
 	.actuality__in
 		@extend %in
 	.actuality__list
@@ -563,22 +578,72 @@ body
 		text-align: center
 		text-decoration: none
 		position: relative
-		&:after
-			content: ""
+		+transition(all linear 0.3s)
+		&:hover
+			background: #19a8d8
+			+transition(all linear 0.3s)
+			.twitter__ico
+				background: #31bfee
+				+transition(all linear 0.3s)
+				+delay(0.3s)
+				span
+					border-color: #4ad0fc
+	.twitter__ico
+		width: 94px
+		height: 94px
+		// background: #31bfee
+		background: transparent 
+		border-radius: 50%
+		position: absolute
+		left: 13px
+		top: 13px
+		+transition(all linear 0.3s)
+		span
+			display: inline-block
 			width: 64px
 			height: 64px
-			background: url("../img/tw.png") 
+			border-radius: 50%
+			background: #FFF
+			border: 6px solid #4ad0fc
+			border-color: #1CB7EB
 			position: absolute
 			top: 50%
-			margin-top: -32px
-			left: 32px
-		&:hover
+			margin-top: -38px
+			left: 50%
+			margin-left: -38px
+			+transition(all linear 0.3s)
+			+delay(0.1s)
 			&:after
-				width: 96px
-				height: 96px
-				background: url("../img/tw_h.png") no-repeat
-				margin-top: -48px
-				left: 16px
+				content: ""
+				+s(tw3)
+				position: absolute
+				left: 50%
+				margin-left: -16px
+				top: 50%
+				margin-top: -12px
+			// &:hover
+			// 	&:after
+			// 		+delay(0.3)
+
+		// &:after
+		// 	content: ""
+		// 	+s(tw3)
+		// 	position: absolute
+		// 	top: 50%
+		// 	margin-top: -32px
+		// 	left: 32px
+		// &:hover
+		// 	background: #19a8d8 
+		// 	&:after
+				// width: 96px
+				// height: 96px
+				// background: url("../img/tw_h.png") no-repeat
+				// margin-top: -48px
+				// left: 16px
+				// border: 6px solid #4ad0fc
+				// box-shadow: 0 0 0 6px #31bfee
+				// margin-top: -38px
+				// left: 26px
 	.twitter__meta
 		font-size: 23px
 		color: #FFF 
@@ -672,6 +737,7 @@ body
 	min-height: 80px
 	padding: 10px 20px
 	resize: vertical
+	border: none
 	
 	
 	
