@@ -3,21 +3,22 @@
 
 // Fonts
 // --------------------------------------------------
-@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=latin,cyrillic)
-
++font(PT_Serif-Web-Regular, PT_Serif-Web-Regular)
 =pt
-	font-family: 'PT Serif', serif
+	font-family: "PT_Serif-Web-Regular", arial, sans-serif
+
++font(PT_Serif-Web-Italic, PT_Serif-Web-Italic)
 =pti
-	font-family: 'PT Serif Italic', serif
-	font-style: italic
+	font-family: "PT_Serif-Web-Italic", arial, sans-serif
+
++font(PT_Serif-Web-Bold, PT_Serif-Web-Bold)
 =ptb
-	font-family: 'PT Serif Bold', serif
-	font-weight: bold
+	font-family: "PT_Serif-Web-Bold", arial, sans-serif 
+
++font(PT_Serif-Web-BoldItalic, PT_Serif-Web-BoldItalic)
 =ptbi
-	font-family: 'PT Serif Bold Italic', serif
-	font-weight: bold
-	font-style: italic
-	
+	font-family: "PT_Serif-Web-BoldItalic", arial, sans-serif
+
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic)
 
 =ps
@@ -503,6 +504,7 @@ body
 		font-size: 40px
 		line-height: 1.2
 		position: relative
+		+ptb
 		&:after
 			content: ""
 			width: 8px

@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=latin,cyrillic);
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
 
@@ -20,17 +19,25 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
+@font-face { font-family: PT_Serif-Web-Regular; src: url("../fonts/PT_Serif-Web-Regular.eot"); src: url("../fonts/PT_Serif-Web-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PT_Serif-Web-Regular.woff") format("woff"), url("../fonts/PT_Serif-Web-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: PT_Serif-Web-Italic; src: url("../fonts/PT_Serif-Web-Italic.eot"); src: url("../fonts/PT_Serif-Web-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/PT_Serif-Web-Italic.woff") format("woff"), url("../fonts/PT_Serif-Web-Italic.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: PT_Serif-Web-Bold; src: url("../fonts/PT_Serif-Web-Bold.eot"); src: url("../fonts/PT_Serif-Web-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PT_Serif-Web-Bold.woff") format("woff"), url("../fonts/PT_Serif-Web-Bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: PT_Serif-Web-BoldItalic; src: url("../fonts/PT_Serif-Web-BoldItalic.eot"); src: url("../fonts/PT_Serif-Web-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PT_Serif-Web-BoldItalic.woff") format("woff"), url("../fonts/PT_Serif-Web-BoldItalic.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
 .header .header__in, .footer .footer__in, .wecan .wecan__in, .portfolio .portfolio__in, .slide .slide__in, .actuality .actuality__in, .twitter .twitter__in, .blog .blog__in { width: 930px; margin-left: auto; margin-right: auto; }
 
-body { background: #f1f1e5; font-family: "PT Serif", serif; font-size: 14px; line-height: 1.4; }
+body { background: #f1f1e5; font-family: "PT_Serif-Web-Regular", arial, sans-serif; font-size: 14px; line-height: 1.4; }
 
-.title { padding-bottom: 80px; font-family: "PT Serif Bold", serif; font-weight: bold; font-size: 40px; color: #424242; text-align: center; position: relative; }
+.title { padding-bottom: 80px; font-family: "PT_Serif-Web-Bold", arial, sans-serif; font-size: 40px; color: #424242; text-align: center; position: relative; }
 .title.title_mod { margin-bottom: 0px; padding-bottom: 10px; }
 .title.title_mod:after { bottom: -90px; }
 .title.title_mod:hover h2, .title.title_mod:hover a { color: #0079e0; border-bottom: 1px solid #0079e0; }
 .title.title_mod h2, .title.title_mod a { display: inline-block; line-height: 1; color: #424242; text-decoration: none; border-bottom: 1px solid #424242; }
 .title:after { content: ""; width: 8px; height: 8px; background: #b3b3b3; border-radius: 50%; position: absolute; bottom: 44px; left: 50%; margin-left: -4px; }
-.title h2 { font-family: "PT Serif Bold", serif; font-weight: bold; font-size: 40px; color: #424242; text-align: center; }
+.title h2 { font-family: "PT_Serif-Web-Bold", arial, sans-serif; font-size: 40px; color: #424242; text-align: center; }
 
 .wrap { background: white; }
 
@@ -137,7 +144,7 @@ body { background: #f1f1e5; font-family: "PT Serif", serif; font-size: 14px; lin
 .slide { height: 400px; background: url("../img/slide.jpg"); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; position: relative; }
 .slide .slide__overlay { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.7); z-index: 100; }
 .slide .slide__descr { padding-top: 105px; color: white; position: relative; z-index: 200; text-align: center; }
-.slide .slide__text { margin-bottom: 50px; font-weight: bold; font-size: 40px; line-height: 1.2; position: relative; }
+.slide .slide__text { margin-bottom: 50px; font-weight: bold; font-size: 40px; line-height: 1.2; position: relative; font-family: "PT_Serif-Web-Bold", arial, sans-serif; }
 .slide .slide__text:after { content: ""; width: 8px; height: 8px; border-radius: 50%; background: white; position: absolute; bottom: -30px; left: 50%; }
 .slide .slide__content { font-weight: bold; font-size: 23px; }
 
@@ -168,7 +175,7 @@ body { background: #f1f1e5; font-family: "PT Serif", serif; font-size: 14px; lin
 .twitter .twitter__link:hover { text-decoration: none; }
 
 .blog { padding-bottom: 90px; }
-.blog .blog__meta { font-size: 23px; color: #6b6b6b; text-align: center; font-family: "PT Serif Bold", serif; font-weight: bold; }
+.blog .blog__meta { font-size: 23px; color: #6b6b6b; text-align: center; font-family: "PT_Serif-Web-Bold", arial, sans-serif; }
 .blog .blog__row { margin-top: 90px; margin-left: -30px; *zoom: 1; }
 .blog .blog__row:after { content: " "; display: table; clear: both; }
 .blog .blog__col { width: 290px; margin-left: 30px; float: left; }
