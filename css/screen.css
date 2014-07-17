@@ -215,8 +215,10 @@ body.inner { background: white; }
 .inner { margin-bottom: 70px; }
 .inner .inner__headerin { padding: 50px 0 40px; }
 .inner .inner__headerrow { text-align: center; position: relative; }
-.inner .h2 { margin-right: 17px; display: inline-block; vertical-align: middle; font-size: 29px; color: #0085e6; text-decoration: none; font-family: "PT Sans", sans-serif; font-weight: normal; }
-.inner .h2 a { font-size: 29px; color: #0085e6; text-decoration: none; font-family: "PT Sans", sans-serif; font-weight: normal; }
+.inner .inner__header .h2 { margin-right: 13px; display: inline-block; vertical-align: middle; font-size: 29px; color: #0085e6; text-decoration: none; font-family: "PT Sans", sans-serif; font-weight: normal; }
+.inner .inner__header .h2 a { font-size: 29px; color: #0085e6; text-decoration: none; font-family: "PT Sans", sans-serif; font-weight: normal; }
+.inner .inner__header .h3 { margin-right: 13px; display: inline-block; vertical-align: middle; font-size: 29px; color: black; text-decoration: none; font-family: "PT Sans", sans-serif; font-weight: normal; }
+.inner .inner__header .h3 a { font-size: 29px; color: black; text-decoration: none; font-family: "PT Sans", sans-serif; font-weight: normal; }
 .inner .inner__headerseparate { margin-right: 10px; display: inline-block; vertical-align: middle; width: 1px; height: 29px; background: #e3e3e3; }
 .inner .inner__headermail { display: inline-block; vertical-align: middle; font-size: 16px; text-decoration: none; color: #979797; font-family: "PT Sans", sans-serif; }
 
@@ -242,9 +244,16 @@ body.inner { background: white; }
 .date2 { font-size: 14px; color: #aaaaaa; font-family: "PT Sans", sans-serif; }
 
 .article { font-size: 20px; color: black; font-family: "PT Sans", sans-serif; }
+.article.article_item { padding-bottom: 30px; margin-bottom: 40px; border-bottom: 1px solid #dbdbdb; }
 .article .h3 { margin-bottom: 20px; color: black; font-size: 40px; text-align: center; font-family: "PT Sans Bold", sans-serif; }
 .article .date2 { margin-bottom: 35px; text-align: center; }
 .article p { margin-bottom: 35px; }
+.article a { color: #0085e6; text-decoration: none; }
+.article a:hover { text-decoration: underline; }
+.article img { display: block; margin-bottom: 30px; margin-left: auto; margin-right: auto; }
+.article .h2 { margin-bottom: 20px; font-size: 40px; color: #0085e6; text-align: center; font-family: "PT Sans Bold", sans-serif; }
+.article .h2 a { font-size: 40px; color: #0085e6; text-decoration: none; font-family: "PT Sans Bold", sans-serif; }
+.article .h2 a:hover { text-decoration: underline; }
 
 .social { margin-bottom: 35px; }
 

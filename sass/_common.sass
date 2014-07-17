@@ -745,21 +745,38 @@ body
 	.inner__headerrow
 		text-align: center
 		position: relative
-	.h2
-		margin-right: 17px
-		display: inline-block
-		vertical-align: middle
-		font-size: 29px
-		color: #0085E6
-		text-decoration: none
-		+ps
-		font-weight: normal
-		a
+	.inner__header
+		.h2
+			margin-right: 13px
+			display: inline-block
+			vertical-align: middle
 			font-size: 29px
 			color: #0085E6
 			text-decoration: none
 			+ps
 			font-weight: normal
+			a
+				font-size: 29px
+				color: #0085E6
+				text-decoration: none
+				+ps
+				font-weight: normal
+	.inner__header
+		.h3
+			margin-right: 13px
+			display: inline-block
+			vertical-align: middle
+			font-size: 29px
+			color: #000000
+			text-decoration: none
+			+ps
+			font-weight: normal
+			a
+				font-size: 29px
+				color: #000000
+				text-decoration: none
+				+ps
+				font-weight: normal
 	.inner__headerseparate
 		margin-right: 10px
 		display: inline-block
@@ -873,7 +890,11 @@ body
 .article
 	font-size: 20px
 	color: #000
-	+ps 
+	+ps
+	&.article_item
+		padding-bottom: 30px
+		margin-bottom: 40px
+		border-bottom: 1px solid #dbdbdb
 	.h3
 		margin-bottom: 20px
 		color: #000
@@ -885,6 +906,29 @@ body
 		text-align: center
 	p
 		margin-bottom: 35px
+	a
+		color: #0085e6
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+	img
+		display: block
+		margin-bottom: 30px
+		margin-left: auto
+		margin-right: auto
+	.h2
+		margin-bottom: 20px
+		font-size: 40px
+		color: #0085E6
+		text-align: center
+		+psb
+		a
+			font-size: 40px
+			color: #0085E6
+			text-decoration: none
+			+psb
+			&:hover
+				text-decoration: underline
 .social
 	margin-bottom: 35px
 .tag
