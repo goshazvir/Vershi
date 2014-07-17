@@ -38,6 +38,8 @@ body
 	+pt
 	font-size: 14px 
 	line-height: 1.4
+	&.inner
+		background: #FFF 
 .title
 	padding-bottom: 80px
 	+ptb
@@ -623,29 +625,6 @@ body
 				margin-left: -16px
 				top: 50%
 				margin-top: -12px
-			// &:hover
-			// 	&:after
-			// 		+delay(0.3)
-
-		// &:after
-		// 	content: ""
-		// 	+s(tw3)
-		// 	position: absolute
-		// 	top: 50%
-		// 	margin-top: -32px
-		// 	left: 32px
-		// &:hover
-		// 	background: #19a8d8 
-		// 	&:after
-				// width: 96px
-				// height: 96px
-				// background: url("../img/tw_h.png") no-repeat
-				// margin-top: -48px
-				// left: 16px
-				// border: 6px solid #4ad0fc
-				// box-shadow: 0 0 0 6px #31bfee
-				// margin-top: -38px
-				// left: 26px
 	.twitter__meta
 		font-size: 23px
 		color: #FFF 
@@ -754,8 +733,230 @@ body
 	padding: 10px 20px
 	resize: vertical
 	border: none
-	
-	
-	
-
-
+// 
+// --------------------------------------------------
+.inner
+	margin-bottom: 70px
+	.inner__header
+	.inner__headerin
+		padding: 50px 0 40px
+		@extend %in
+	.inner__headertitle
+	.inner__headerrow
+		text-align: center
+		position: relative
+	.h2
+		margin-right: 17px
+		display: inline-block
+		vertical-align: middle
+		font-size: 29px
+		color: #0085E6
+		text-decoration: none
+		+ps
+		font-weight: normal
+		a
+			font-size: 29px
+			color: #0085E6
+			text-decoration: none
+			+ps
+			font-weight: normal
+	.inner__headerseparate
+		margin-right: 10px
+		display: inline-block
+		vertical-align: middle
+		width: 1px
+		height: 29px
+		background: #e3e3e3 
+	.inner__headermail
+		display: inline-block
+		vertical-align: middle
+		font-size: 16px
+		text-decoration: none
+		color: #979797
+		+ps
+	.inner__page
+	.inner__pagein
+		@extend %in
+.inner-footer
+	padding-bottom: 60px
+	.inner-footer__in
+		@extend %in
+		text-align: center
+	.inner-footer__copy
+		margin-bottom: 10px
+		color: #A2A2A2
+		font-size: 16px
+		+ps 
+	.inner-footer__contacts
+	.inner-footer__tel
+		margin-right: 30px
+		display: inline-block
+		font-size: 16px
+		color: #333
+		+ps
+		position: relative
+		&:after
+			content: ""
+			width: 1px
+			height: 13px
+			background: #F1F1F1
+			+box-shadow(1px 0px 0 #f4f4f4)
+			position: absolute
+			top: 5px
+			right: -15px
+		a
+			font-size: 16px
+			color: #333
+			+ps
+			text-decoration: none
+	.inner-footer__mail
+		display: inline-block
+		font-size: 16px
+		color: #0085E6 
+		+ps
+		a
+			font-size: 16px
+			color: #0085E6 
+			+ps
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+.on-site
+	position: absolute
+	top: 0
+	left: 0
+	display: inline-block
+	height: 35px
+	line-height: 33px
+	padding: 0px 16px 0 8px
+	background: #00bcc8
+	border-radius: 2px 3px 3px 2px
+	text-decoration: underline
+	font-size: 18px
+	color: #fff
+	+ps
+	&:before
+		content: ""
+		display: inline-block
+		position: absolute
+		top: 0
+		left: -16px
+		+arr(16,34, #00bcc8, left)
+	&:hover
+		color: #A3FF99
+		background: #00a9c8
+		&:before
+			+arr(16,34, #00a9c8, left)
+.ico-mail
+	margin-right: 6px
+	display: inline-block
+	vertical-align: middle
+	width: 34px
+	height: 28px
+	position: relative
+	background: transparent
+	border-radius: 2px
+	&:after
+		content: ""
+		+s(mail)
+		position: absolute
+		top: 50%
+		margin-top: -7px
+		left: 50%
+		margin-left: -10px
+	&:hover
+		background: #E1F2FF
+.date2
+	font-size: 14px
+	color: #AAA 
+	+ps
+.article
+	font-size: 20px
+	color: #000
+	+ps 
+	.h3
+		margin-bottom: 20px
+		color: #000
+		font-size: 40px
+		text-align: center 
+		+psb
+	.date2
+		margin-bottom: 35px
+		text-align: center
+	p
+		margin-bottom: 35px
+.social
+	margin-bottom: 35px
+.tag
+	margin-bottom: 35px
+	li
+		display: inline-block
+	a
+		font-size: 14px
+		+ps
+		color: #9b9b9b
+		&:hover
+			color: #0085E6
+.someblock
+	padding: 13px 20px
+	background: #F4FAEB
+	border-radius: 3px
+	text-align: center
+	font-size: 16px
+	color: #0086ED
+	+clr
+	position: relative
+	+ps
+	.someblock__left
+		float: left
+	.someblock__center
+		width: 100px
+		position: absolute
+		top: 12px
+		left: 50%
+		margin-left: -50px
+	.someblock__right
+		float: right
+.switch
+	font-size: 16px
+	color: #8D8D8D
+	+ps
+	.switch__left
+	.switch__center
+	.switch__right
+.search
+	margin-bottom: 28px
+	.search__field
+		min-width: 364px
+		display: inline-block
+		height: 32px
+		line-height: 32px
+		padding: 0 7px
+		position: relative
+		border: 1px solid #d8d8d8
+		border-radius: 17px
+		background-color: #f7f7f7
+		// @include box-shadow(0 4px 4px rgba(0,0,0,.04), 0 0 0 1px rgba(255,255,255,.89), inset 0 0 4px rgba(2,2,2,.22))
+		+box-shadow(0 1px 0 #fff, 0 2px 2px rgba(#000, 0.06), inset 0 1px 3px rgba(2,2,2,.22))
+		text-align: left
+	.search__btn
+		+s(lupa)
+		display: inline-block
+		vertical-align: middle
+	.search__input
+		min-width: 342px
+		margin-bottom: 1px
+		display: inline-block
+		vertical-align: middle
+		background: transparent
+		font-size: 14px
+		color: #ADADAD
+		+ps
+		+placeholder
+			color: #ADADAD
+			+ps
+			font-size: 14px
+		&:focus
+			+placeholder
+				color: transparent 
+		
