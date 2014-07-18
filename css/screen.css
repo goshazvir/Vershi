@@ -58,8 +58,7 @@ body.inner { background: white; }
 .header .header__social .header__social-ve a:after { content: ""; position: absolute; bottom: 50%; margin-bottom: -10px; left: 50%; margin-left: -15px; background: url('../img/icons-s91c7bec424.png') 0 -713px no-repeat; width: 30px; height: 19px; }
 .header .header__social .header__social-ve a:hover:before { content: ""; height: 10px; background: #2f79ff; position: absolute; top: -10px; left: 0; right: 0; }
 .header .header__social .header__social-ve a:hover:after { margin-bottom: 0; }
-.header .header__social .header__social-tw { background: #1cb7eb; }
-.header .header__social .header__social-tw a { border-radius: 0 2px 0 0; }
+.header .header__social .header__social-tw a { background: #1cb7eb; border-radius: 0 2px 0 0; }
 .header .header__social .header__social-tw a:after { content: ""; position: absolute; bottom: 50%; margin-bottom: -10px; left: 50%; margin-left: -13px; background: url('../img/icons-s91c7bec424.png') 0 -836px no-repeat; width: 26px; height: 21px; }
 .header .header__social .header__social-tw a:hover { border-radius: 0 0px 0 0; }
 .header .header__social .header__social-tw a:hover:before { content: ""; height: 10px; background: #1cb7eb; border-radius: 0 2px 0 0; position: absolute; top: -10px; left: 0; right: 0; }
