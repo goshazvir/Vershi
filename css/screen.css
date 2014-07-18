@@ -174,7 +174,7 @@ body.inner { background: white; }
 .twitter .twitter__meta { font-size: 23px; color: white; font-family: "PT Sans Italic", sans-serif; }
 .twitter .twitter__descr, .twitter .twitter__link { display: inline-block; }
 .twitter .twitter__link { margin-right: 5px; color: #c7ffb1; text-decoration: underline; }
-.twitter .twitter__link:hover { text-decoration: none; }
+.twitter .twitter__link:hover { color: white; }
 
 .blog { padding-bottom: 90px; }
 .blog .blog__meta { font-size: 23px; color: #6b6b6b; text-align: center; font-family: "PT Sans", sans-serif; }
