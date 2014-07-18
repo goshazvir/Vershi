@@ -182,7 +182,7 @@ body.inner { background: white; }
 .blog .blog__row:after { content: " "; display: table; clear: both; }
 .blog .blog__col { width: 290px; margin-left: 30px; float: left; }
 .blog .blog__item { padding: 35px 40px; border: 6px solid #d3f4b1; border-radius: 10px; position: relative; }
-.blog .blog__item:after { content: ""; top: -28px; left: 140px; position: absolute; background: url('../img/icons-s97f1e8c492.png') 0 -959px no-repeat; width: 36px; height: 22px; }
+.blog .blog__item:after { content: ""; top: -28px; left: 134px; position: absolute; background: url('../img/icons-s97f1e8c492.png') 0 -959px no-repeat; width: 36px; height: 22px; }
 .blog .blog__item:hover { border-color: #bee7ff; }
 .blog .blog__item:hover:after { background-position: 0 -991px; }
 .blog .blog__item:hover .blog__itemtitle { text-decoration: underline; }
