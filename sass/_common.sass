@@ -294,6 +294,7 @@ body
 			+transition(all linear 0.2s)
 		&:active
 			background: #50D72C
+			+transform(scale(0.95))
 	.form__tel
 		+ps
 		font-size: 30px
@@ -396,6 +397,7 @@ body
 	.wecan__listcontent
 		font-size: 18px
 		color: #2F2E2E
+		+ps
 .portfolio
 	padding-bottom: 85px
 	.portfolio__in
@@ -517,12 +519,11 @@ body
 			bottom: -30px
 			left: 50%
 	.slide__content
-		font-weight: bold
 		font-size: 23px
-		p
+		+ps
 .actuality
 	background: #FFF 
-	padding: 58px 0 70px
+	padding: 58px 0 25px
 	.actuality__in
 		@extend %in
 	.actuality__list
@@ -645,7 +646,7 @@ body
 		font-size: 23px
 		color: #6B6B6B
 		text-align: center
-		+ptb
+		+ps
 	.blog__row
 		margin-top: 90px
 		margin-left: -30px
