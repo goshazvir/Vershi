@@ -146,7 +146,7 @@ body.inner { background: white; }
 .slide { height: 400px; background: url("../img/slide.jpg"); background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; position: relative; }
 .slide .slide__overlay { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.7); z-index: 100; }
 .slide .slide__descr { padding-top: 105px; color: white; position: relative; z-index: 200; text-align: center; }
-.slide .slide__text { margin-bottom: 50px; font-weight: bold; font-size: 40px; line-height: 1.2; position: relative; font-family: "PT_Serif-Web-Bold", arial, sans-serif; }
+.slide .slide__text { margin-bottom: 50px; font-size: 40px; line-height: 1.2; position: relative; font-family: "PT_Serif-Web-Bold", arial, sans-serif; }
 .slide .slide__text:after { content: ""; width: 8px; height: 8px; border-radius: 50%; background: white; position: absolute; bottom: -30px; left: 50%; }
 .slide .slide__text p { font-weight: bold; font-size: 40px; line-height: 1.2; font-family: "PT_Serif-Web-Bold", arial, sans-serif; }
 .slide .slide__content { font-size: 23px; line-height: 33px; font-family: "PT Sans", sans-serif; }
