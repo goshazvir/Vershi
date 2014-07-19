@@ -89,7 +89,7 @@ body.inner { background: white; }
 .form .form__labellong { margin-bottom: 40px; }
 .form .form__send { display: inline-block; padding: 11px 15px; border: 2px solid #60f239; border-radius: 5px; background: transparent; color: #60f239; font-size: 18px; font-family: "PT Sans", sans-serif; -webkit-transition: all linear; -webkit-transition-delay: 0.2s; -moz-transition: all linear 0.2s; -o-transition: all linear 0.2s; transition: all linear 0.2s; }
 .form .form__send:hover { background: #60f239; color: black; -webkit-transition: all linear; -webkit-transition-delay: 0.2s; -moz-transition: all linear 0.2s; -o-transition: all linear 0.2s; transition: all linear 0.2s; }
-.form .form__send:active { background: #50d72c; -webkit-transform: scale(0.95); -moz-transform: scale(0.95); -ms-transform: scale(0.95); -o-transform: scale(0.95); transform: scale(0.95); }
+.form .form__send:active { -webkit-transform: scale(0.95); -moz-transform: scale(0.95); -ms-transform: scale(0.95); -o-transform: scale(0.95); transform: scale(0.95); }
 .form .form__tel { font-family: "PT Sans", sans-serif; font-size: 30px; color: white; }
 .form .form__mail { font-size: 30px; color: #56d838; font-family: "PT Sans", sans-serif; }
 .form .form__mail:hover { color: #90e38a; }
