@@ -36,7 +36,7 @@ body.inner { background: white; }
 .title.title_mod { margin-bottom: 0px; padding-bottom: 10px; }
 .title.title_mod:after { bottom: -90px; }
 .title.title_mod:hover h2, .title.title_mod:hover a { color: #0079e0; border-bottom: 1px solid #0079e0; }
-.title.title_mod h2, .title.title_mod a { display: inline-block; line-height: 1; color: #424242; text-decoration: none; border-bottom: 1px solid #424242; }
+.title.title_mod h2, .title.title_mod a { display: inline-block; line-height: 1; color: #424242; text-decoration: none; border-bottom: 1px solid #424242; font-family: "PT_Serif-Web-Bold", arial, sans-serif; font-size: 40px; color: #424242; }
 .title:after { content: ""; width: 8px; height: 8px; background: #b3b3b3; border-radius: 50%; position: absolute; bottom: 44px; left: 50%; margin-left: -4px; }
 .title h2 { font-family: "PT_Serif-Web-Bold", arial, sans-serif; font-size: 40px; color: #424242; text-align: center; }
 
