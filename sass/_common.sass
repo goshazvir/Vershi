@@ -62,9 +62,6 @@ body
 			color: #424242 
 			text-decoration: none
 			border-bottom: 1px solid #424242
-			+ptb
-			font-size: 40px
-			color: #424242
 	&:after
 		content: ""
 		width: 8px
@@ -896,6 +893,7 @@ body
 	position: relative
 	background: transparent
 	border-radius: 2px
+	font-style: normal
 	&:after
 		content: ""
 		+s(mail)
@@ -906,6 +904,16 @@ body
 		margin-left: -10px
 	&:hover
 		background: #E1F2FF
+		span
+			display: block
+	span
+		width: 140px
+		position: absolute
+		top: 2px
+		left: 27px
+		+ps
+		font-size: 16px
+		display: none
 .date2
 	font-size: 14px
 	color: #AAA 

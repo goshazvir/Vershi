@@ -36,7 +36,7 @@ body.inner { background: white; }
 .title.title_mod { margin-bottom: 0px; padding-bottom: 10px; }
 .title.title_mod:after { bottom: -90px; }
 .title.title_mod:hover h2, .title.title_mod:hover a { color: #0079e0; border-bottom: 1px solid #0079e0; }
-.title.title_mod h2, .title.title_mod a { display: inline-block; line-height: 1; color: #424242; text-decoration: none; border-bottom: 1px solid #424242; font-family: "PT_Serif-Web-Bold", arial, sans-serif; font-size: 40px; color: #424242; }
+.title.title_mod h2, .title.title_mod a { display: inline-block; line-height: 1; color: #424242; text-decoration: none; border-bottom: 1px solid #424242; }
 .title:after { content: ""; width: 8px; height: 8px; background: #b3b3b3; border-radius: 50%; position: absolute; bottom: 44px; left: 50%; margin-left: -4px; }
 .title h2 { font-family: "PT_Serif-Web-Bold", arial, sans-serif; font-size: 40px; color: #424242; text-align: center; }
 
@@ -239,9 +239,11 @@ body.inner { background: white; }
 .on-site:hover { color: #a3ff99; background: #00a9c8; }
 .on-site:hover:before { width: 0px; height: 0px; border-style: solid; border-width: 17px 16px 17px 0; border-color: transparent #00a9c8 transparent transparent; }
 
-.ico-mail { margin-right: 6px; display: inline-block; vertical-align: middle; width: 34px; height: 28px; position: relative; background: transparent; border-radius: 2px; }
+.ico-mail { margin-right: 6px; display: inline-block; vertical-align: middle; width: 34px; height: 28px; position: relative; background: transparent; border-radius: 2px; font-style: normal; }
 .ico-mail:after { content: ""; background: url('../img/icons-s97f1e8c492.png') 0 -1071px no-repeat; width: 21px; height: 15px; position: absolute; top: 50%; margin-top: -7px; left: 50%; margin-left: -10px; }
 .ico-mail:hover { background: #e1f2ff; }
+.ico-mail:hover span { display: block; }
+.ico-mail span { width: 140px; position: absolute; top: 2px; left: 27px; font-family: "PT Sans", sans-serif; font-size: 16px; display: none; }
 
 .date2 { font-size: 14px; color: #aaaaaa; font-family: "PT Sans", sans-serif; }
 
