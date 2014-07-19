@@ -148,6 +148,7 @@ body.inner { background: white; }
 .slide .slide__descr { padding-top: 105px; color: white; position: relative; z-index: 200; text-align: center; }
 .slide .slide__text { margin-bottom: 50px; font-weight: bold; font-size: 40px; line-height: 1.2; position: relative; font-family: "PT_Serif-Web-Bold", arial, sans-serif; }
 .slide .slide__text:after { content: ""; width: 8px; height: 8px; border-radius: 50%; background: white; position: absolute; bottom: -30px; left: 50%; }
+.slide .slide__text p { font-weight: bold; font-size: 40px; line-height: 1.2; font-family: "PT_Serif-Web-Bold", arial, sans-serif; }
 .slide .slide__content { font-size: 23px; line-height: 33px; font-family: "PT Sans", sans-serif; }
 
 .actuality { background: white; padding: 58px 0 25px; }
