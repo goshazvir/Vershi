@@ -83,6 +83,7 @@ body.inner { background: white; }
 .footer .title:hover { color: white; border-bottom: none; }
 .footer .title:hover a, .footer .title:hover h2 { color: white; border-bottom: none; }
 
+.form { margin-bottom: 90px; }
 .form .form__messagein { margin-bottom: 50px; height: 70px; line-height: 70px; background: #244344; border: 1px solid #315556; border-radius: 3px; text-align: center; font-family: "PT_Sans-Web-Italic", sans-serif; font-size: 18px; color: #5a9b9d; position: relative; }
 .form .form__messagein .cross { position: absolute; right: 25px; top: 50%; margin-top: -13px; }
 .form .form__row { *zoom: 1; }
