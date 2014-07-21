@@ -3,6 +3,8 @@
 
 // Fonts
 // --------------------------------------------------
+// SERIF
+// --------------------------------------------------
 +font(PT_Serif-Web-Regular, PT_Serif-Web-Regular)
 =pt
 	font-family: "PT_Serif-Web-Regular", arial, sans-serif
@@ -18,21 +20,25 @@
 +font(PT_Serif-Web-BoldItalic, PT_Serif-Web-BoldItalic)
 =ptbi
 	font-family: "PT_Serif-Web-BoldItalic", arial, sans-serif
-
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic)
-
+// SANS
+// --------------------------------------------------
++font(PT_Sans-Web-Regular, PT_Sans-Web-Regular)
 =ps
-	font-family: 'PT Sans', sans-serif
+	font-family: 'PT Sans Regular', sans-serif
+	
++font(PT_Sans-Web-Italic, PT_Sans-Web-Italic)
 =psi
 	font-family: 'PT Sans Italic', sans-serif
+
++font(PT_Sans-Web-Bold, PT_Sans-Web-Bold)
 =psb
 	font-family: 'PT Sans Bold', sans-serif
+// Common blocks
+// --------------------------------------------------
 %in
 	width: 930px
 	margin-left: auto
 	margin-right: auto
-// Common blocks
-// --------------------------------------------------
 body
 	background: #F1F1E5 
 	+pt
@@ -41,7 +47,7 @@ body
 	&.inner
 		background: #FFF 
 .title
-	padding-bottom: 80px
+	padding-bottom: 74px
 	+ptb
 	font-size: 40px
 	color: #424242
@@ -108,6 +114,7 @@ body
 	.header__descrmeta
 		padding-top: 230px
 		font-size: 23px
+		line-height: 33px
 		text-align: center
 		color: #FFF 
 		+psi
@@ -123,7 +130,8 @@ body
 		text-align: center
 	.header__contactlink
 		border-bottom: 1px dotted #18ff00
-		font-size: 23px
+		font-size: 24px
+		line-height: 32px	
 		color: #18FF00
 		text-decoration: none
 		+ps
@@ -165,8 +173,8 @@ body
 					&:after
 						margin-bottom: 0
 		.header__social-tw
-			background: #1cb7eb
 			a
+				background: #1cb7eb
 				border-radius: 0 2px 0 0
 				&:after
 					content: ""
@@ -293,7 +301,8 @@ body
 			color: #000
 			+transition(all linear 0.2s)
 		&:active
-			background: #50D72C
+			// background: #50D72C
+			+transform(scale(0.95))
 	.form__tel
 		+ps
 		font-size: 30px
@@ -358,10 +367,12 @@ body
 		+box-shadow(0px 1px 0 #e5e5d2)
 		border-top: none
 	.wecan__list
+		text-align: center
 		ul
+			display: inline-block
 			+clr
 		li
-			width: 310px
+			width: 277px
 			padding-top: 210px
 			padding-bottom: 86px
 			float: left
@@ -395,7 +406,9 @@ body
 			+psb
 	.wecan__listcontent
 		font-size: 18px
+		line-height: 28px
 		color: #2F2E2E
+		+ps
 .portfolio
 	padding-bottom: 85px
 	.portfolio__in
@@ -418,6 +431,8 @@ body
 			border-radius: 2px
 			display: inline-block
 			vertical-align: top
+			&:hover
+				+box-shadow(none)
 		a
 			display: block
 			text-decoration: none
@@ -434,16 +449,19 @@ body
 		// 	max-width: 100%
 	.portfolio__content
 		padding: 20px 25px
-		background: #FFF 
+		background: #FFF
+		border-radius: 0 0 2px 2px
 	.portfolio__title
 		margin-bottom: 10px
 		+psb
 		font-size: 24px
+		line-height: 32px
 		color: #0079E0
 		text-decoration: none
 		line-height: 1.2
 	.portfolio__text
 		font-size: 18px
+		line-height: 28px
 		color: #2F2E2E
 		+ps
 	.portfolio__more
@@ -502,7 +520,6 @@ body
 		text-align: center
 	.slide__text
 		margin-bottom: 50px
-		font-weight: bold
 		font-size: 40px
 		line-height: 1.2
 		position: relative
@@ -516,13 +533,18 @@ body
 			position: absolute
 			bottom: -30px
 			left: 50%
-	.slide__content
-		font-weight: bold
-		font-size: 23px
 		p
+			font-weight: bold
+			font-size: 40px
+			line-height: 1.2
+			+ptb
+	.slide__content
+		font-size: 23px
+		line-height: 33px
+		+ps
 .actuality
 	background: #FFF 
-	padding: 58px 0 70px
+	padding: 58px 0 25px
 	.actuality__in
 		@extend %in
 	.actuality__list
@@ -627,6 +649,7 @@ body
 				margin-top: -12px
 	.twitter__meta
 		font-size: 23px
+		// line-height: 33px
 		color: #FFF 
 		+psi
 	.twitter__descr, .twitter__link
@@ -636,7 +659,8 @@ body
 		color: #c7ffb1
 		text-decoration: underline
 		&:hover
-			text-decoration: none
+			// text-decoration: none
+			color: #FFF 
 .blog
 	padding-bottom: 90px
 	.blog__in
@@ -645,7 +669,7 @@ body
 		font-size: 23px
 		color: #6B6B6B
 		text-align: center
-		+ptb
+		+ps
 	.blog__row
 		margin-top: 90px
 		margin-left: -30px
@@ -661,27 +685,31 @@ body
 		position: relative
 		&:after
 			content: ""
-			top: -26px
-			left: 140px
+			top: -28px
+			left: 134px
 			position: absolute
-			+arr(23, 23, #d3f4b1, bottom-left)
+			// +arr(23, 23, #d3f4b1, bottom-left)
+			+s(arr2)
 		&:hover
 			border-color: #bee7ff
 			&:after
-				+arr(23, 23, #bee7ff, bottom-left)
+				// +arr(23, 23, #bee7ff, bottom-left)
+				+sp(arr2_h)
 			.blog__itemtitle
 				text-decoration: underline
 		&.blog__item_first
 			&:after
-				+arr(23, 23, #d3f4b1, bottom-right)
+				// +arr(23, 23, #d3f4b1, bottom-right)
+				+s(arr1)
 				left: auto 
 				right: 50px
 			&:hover
 				&:after
-					+arr(23, 23, #bee7ff, bottom-right)
+					+sp(arr1_h)
+					// +arr(23, 23, #bee7ff, bottom-right)
 	.blog__itemtitle
 		font-size: 24px
-		line-height: 1.2 
+		line-height: 32px
 		+ps
 		color: #0079E0 
 .date
@@ -701,11 +729,13 @@ body
 		+s(cross)
 		position: absolute
 		top: 50%
-		margin-top: -6px
+		margin-top: -7px
 		left: 50%
 		margin-left: -7px
 	&:hover
-		background: #3b7171 
+		background: #3b7171
+		&:after
+			+s(cross_h)
 .input, .textarea
 	background: #D2F9C7 
 	border-radius: 3px
@@ -873,6 +903,7 @@ body
 	position: relative
 	background: transparent
 	border-radius: 2px
+	font-style: normal
 	&:after
 		content: ""
 		+s(mail)
@@ -883,6 +914,16 @@ body
 		margin-left: -10px
 	&:hover
 		background: #E1F2FF
+		span
+			display: block
+	span
+		width: 140px
+		position: absolute
+		top: 2px
+		left: 27px
+		+ps
+		font-size: 16px
+		display: none
 .date2
 	font-size: 14px
 	color: #AAA 
