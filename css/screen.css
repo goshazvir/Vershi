@@ -244,7 +244,7 @@ body.inner { background: white; }
 .inner-footer .inner-footer__mail a { font-size: 16px; color: #0085e6; font-family: "PT_Sans-Web-Regular", sans-serif; font-weight: normal; font-style: normal; text-decoration: none; }
 .inner-footer .inner-footer__mail a:hover { text-decoration: underline; }
 
-.on-site { position: absolute; top: 0; left: 0; display: inline-block; padding: 0px 16px 0 8px; background: url('../img/icons-s0205480503.png') 0 -912px no-repeat; width: 95px; height: 35px; line-height: 33px; text-decoration: underline; font-size: 18px; color: white; font-family: "PT_Sans-Web-Regular", sans-serif; font-weight: normal; font-style: normal; }
+.on-site { position: absolute; top: 0; left: 0; display: inline-block; padding: 0px 16px 0 8px; background: url('../img/icons-s0205480503.png') 0 -912px no-repeat; width: 95px; height: 35px; width: 85px; padding-left: 10px; line-height: 33px; text-decoration: underline; font-size: 18px; color: white; font-family: "PT_Sans-Web-Regular", sans-serif; font-weight: normal; font-style: normal; }
 .on-site:hover { background-position: 0 -867px; color: #a3ff99; }
 
 .ico-mail { margin-right: 6px; display: inline-block; vertical-align: middle; width: 34px; height: 28px; position: relative; background: transparent; border-radius: 2px; font-style: normal; }
