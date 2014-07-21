@@ -209,7 +209,7 @@ body
 .logo
 	+s(logo)
 	position: absolute
-	top: 30px
+	top: 41px
 	left: 50%
 	margin-left: -69px
 .in-blog
@@ -417,6 +417,7 @@ body
 			color: #2F2E2E
 			line-height: 1.2
 			+psb
+			font-weight: normal
 	.wecan__listcontent
 		font-size: 18px
 		line-height: 28px
@@ -948,7 +949,8 @@ body
 .article
 	font-size: 20px
 	color: #000
-	+ps
+	font-family: "PT Sans", sans-serif
+	// +ps
 	&.article_item
 		padding-bottom: 30px
 		margin-bottom: 40px
@@ -1014,6 +1016,14 @@ body
 	+clr
 	position: relative
 	+ps
+	.someblock__left, .someblock__right
+		a
+			font-size: 16px
+			color: #0086ed
+			text-decoration: none
+			+ps
+			&:hover
+				text-decoration: underline
 	.someblock__left
 		float: left
 	.someblock__center
