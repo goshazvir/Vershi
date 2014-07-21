@@ -264,8 +264,8 @@ body.inner { background: white; }
 .article a { color: #0085e6; text-decoration: none; border-bottom: 1px solid transparent; }
 .article a:hover { text-decoration: none; border-color: #0085e6; }
 .article img { display: block; margin-bottom: 30px; margin-left: auto; margin-right: auto; }
-.article .h2 { margin-bottom: 20px; font-size: 40px; color: #0085e6; text-align: center; font-family: "PT_Sans-Web-Bold", sans-serif; }
-.article .h2 a { line-height: 1; font-size: 40px; color: #0085e6; text-decoration: none; border-bottom: 1px solid transparent; font-family: "PT_Sans-Web-Bold", sans-serif; }
+.article .h2 { margin-bottom: 20px; font-size: 40px; color: #0085e6; text-align: center; font-family: "PT_Sans-Web-Bold", sans-serif; font-weight: normal; }
+.article .h2 a { line-height: 1; font-size: 40px; color: #0085e6; text-decoration: none; border-bottom: 1px solid transparent; font-family: "PT_Sans-Web-Bold", sans-serif; font-weight: normal; }
 .article .h2 a:hover { text-decoration: none; border-color: #0085e6; }
 
 .social { margin-bottom: 35px; }
