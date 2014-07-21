@@ -908,27 +908,17 @@ body
 	top: 0
 	left: 0
 	display: inline-block
-	height: 35px
-	line-height: 33px
 	padding: 0px 16px 0 8px
-	background: #00bcc8
-	border-radius: 2px 3px 3px 2px
+	+s(arr)
+	line-height: 33px
 	text-decoration: underline
 	font-size: 18px
 	color: #fff
 	+ps
-	&:before
-		content: ""
-		display: inline-block
-		position: absolute
-		top: 0
-		left: -16px
-		+arr(16,34, #00bcc8, left)
 	&:hover
+		+sp(arr_h)
 		color: #A3FF99
-		background: #00a9c8
-		&:before
-			+arr(16,34, #00a9c8, left)
+
 .ico-mail
 	margin-right: 6px
 	display: inline-block
