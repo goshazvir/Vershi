@@ -3,8 +3,6 @@
 
 // Fonts
 // --------------------------------------------------
-// SERIF
-// --------------------------------------------------
 +font(PT_Serif-Web-Regular, PT_Serif-Web-Regular)
 =pt
 	font-family: "PT_Serif-Web-Regular", arial, sans-serif
@@ -20,25 +18,36 @@
 +font(PT_Serif-Web-BoldItalic, PT_Serif-Web-BoldItalic)
 =ptbi
 	font-family: "PT_Serif-Web-BoldItalic", arial, sans-serif
+
+
 // SANS
 // --------------------------------------------------
-+font(PT_Sans-Web-Regular, PT_Sans-Web-Regular)
-=ps
-	font-family: 'PT Sans Regular', sans-serif
+// +font(PT_Sans-Web-Regular, PT_Sans-Web-Regular)
+// =ps
+// 	font-family: 'PT Sans Regular', sans-serif
 	
-+font(PT_Sans-Web-Italic, PT_Sans-Web-Italic)
+// +font(PT_Sans-Web-Italic, PT_Sans-Web-Italic)
+// =psi
+// 	font-family: 'PT Sans Italic', sans-serif
+
+// +font(PT_Sans-Web-Bold, PT_Sans-Web-Bold)
+// =psb
+// 	font-family: 'PT Sans Bold', sans-serif
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic)
+
+=ps
+	font-family: 'PT Sans', sans-serif
 =psi
 	font-family: 'PT Sans Italic', sans-serif
-
-+font(PT_Sans-Web-Bold, PT_Sans-Web-Bold)
 =psb
 	font-family: 'PT Sans Bold', sans-serif
-// Common blocks
-// --------------------------------------------------
 %in
 	width: 930px
 	margin-left: auto
 	margin-right: auto
+// Common blocks
+// --------------------------------------------------
 body
 	background: #F1F1E5 
 	+pt
@@ -55,9 +64,9 @@ body
 	position: relative
 	&.title_mod
 		margin-bottom: 0px
-		padding-bottom: 10px
+		padding-bottom: 0px
 		&:after
-			bottom: -90px
+			bottom: -73px
 		&:hover
 			h2, a
 				color: #0079E0
@@ -75,7 +84,7 @@ body
 		background: #b3b3b3 
 		border-radius: 50%
 		position: absolute
-		bottom: 44px
+		bottom: 41px
 		left: 50%
 		margin-left: -4px
 	h2
@@ -235,6 +244,8 @@ body
 	background: #1A3435
 	.footer__in
 		@extend %in
+		.title_mod
+			padding-bottom: 0
 	.footer__meta
 		margin-bottom: 85px
 		text-align: center
@@ -357,10 +368,11 @@ body
 // PAGE
 // --------------------------------------------------
 .wecan
-	margin-bottom: 48px
+	// margin-bottom: 56px
+	margin-bottom: 71px
 	.wecan__in
 		@extend %in
-		padding-top: 56px
+		padding-top: 68px
 		background: #fff
 		border-radius: 0 0 2px 2px
 		border: 1px solid #e5e5d2
@@ -374,7 +386,7 @@ body
 		li
 			width: 277px
 			padding-top: 210px
-			padding-bottom: 86px
+			padding-bottom: 76px
 			float: left
 			text-align: center
 			position: relative
@@ -410,7 +422,7 @@ body
 		color: #2F2E2E
 		+ps
 .portfolio
-	padding-bottom: 85px
+	padding-bottom: 93px
 	.portfolio__in
 		@extend %in
 	.portfolio__list
@@ -544,7 +556,7 @@ body
 		+ps
 .actuality
 	background: #FFF 
-	padding: 58px 0 25px
+	padding: 68px 0 15px
 	.actuality__in
 		@extend %in
 	.actuality__list
@@ -593,7 +605,7 @@ body
 			+psb
 .twitter
 	text-align: center
-	margin-bottom: 50px
+	margin-bottom: 56px
 	.twitter__in
 		display: inline-block
 		@extend %in
@@ -662,6 +674,7 @@ body
 			// text-decoration: none
 			color: #FFF 
 .blog
+	margin-bottom: -20px
 	padding-bottom: 90px
 	.blog__in
 		@extend %in
@@ -671,7 +684,7 @@ body
 		text-align: center
 		+ps
 	.blog__row
-		margin-top: 90px
+		margin-top: 84px
 		margin-left: -30px
 		+clr
 	.blog__col
@@ -707,6 +720,9 @@ body
 				&:after
 					+sp(arr1_h)
 					// +arr(23, 23, #bee7ff, bottom-right)
+		&.blog__item_last
+			&:after
+				left: 50px
 	.blog__itemtitle
 		font-size: 24px
 		line-height: 32px
