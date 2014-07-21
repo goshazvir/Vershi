@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400&subset=latin,cyrillic);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
 
 body, html { height: 100%; }
@@ -256,7 +257,7 @@ body.inner { background: white; }
 
 .date2 { font-size: 14px; color: #aaaaaa; font-family: "PT_Sans-Web-Regular", sans-serif; }
 
-.article { font-size: 20px; color: black; font-family: "PT Sans", sans-serif; }
+.article { font-size: 20px; color: black; font-family: "PT Sans", sans-serif; font-weight: normal; font-style: normal; }
 .article.article_item { padding-bottom: 30px; margin-bottom: 40px; border-bottom: 1px solid #dbdbdb; }
 .article .h3 { margin-bottom: 20px; color: black; font-size: 40px; text-align: center; font-family: "PT_Sans-Web-Bold", sans-serif; }
 .article .date2 { margin-bottom: 35px; text-align: center; }
