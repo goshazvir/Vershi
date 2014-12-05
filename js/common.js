@@ -21,7 +21,23 @@ head.ready(function() {
 	  }, 500);
 	  return false;
 	 });
-	
+
+	$('.js-flexslider').flexslider({
+		namespace: "gallery-",
+		smoothHeight: true,
+		animation: "fade",
+		selector: ".js-flexslider-in > .gallery-item",
+		directionNav: false,
+		// controlsContainer: ".slider",
+		useCSS: false,
+		controlNav: true,
+		slideshow: true,
+		animationLoop: true,  
+		slideshowSpeed: 7000,
+		animationSpeed: 600, 
+	});
+
+
 	// RESIZE
 	$(window).resize(function(){
 	  height();
