@@ -304,7 +304,7 @@ body.inner { background: white; }
 .gallery, .js-flexslider, .js-flexslider-in { height: 400px; }
 
 .gallery-control-nav { position: relative; top: -170px; z-index: 999; font-size: 0; text-align: center; }
-.gallery-control-nav li { width: 34px; height: 14px; line-height: 14px; text-align: center; display: inline-block; vertical-align: middle; font-size: 0; cursor: pointer; }
+.gallery-control-nav li { width: 34px; height: 14px; line-height: 21px; text-align: center; display: inline-block; vertical-align: middle; font-size: 0; cursor: pointer; }
 .gallery-control-nav li:first-child { margin-left: 0; }
 .gallery-control-nav a { display: inline-block; vertical-align: middle; margin: 0 auto; width: 10px; height: 10px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; background: white; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30); opacity: 0.3; -webkit-transition: opacity linear 1; -moz-transition: opacity linear 1; -o-transition: opacity linear 1; transition: opacity linear 1; border: 2px solid transparent; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .gallery-control-nav a:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; -webkit-transition: opacity linear 1; -moz-transition: opacity linear 1; -o-transition: opacity linear 1; transition: opacity linear 1; }
