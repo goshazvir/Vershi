@@ -124,21 +124,33 @@ body
 	.header__descr
 		height: 340px
 		position: absolute
+		z-index: 100
 		left: 0
 		right: 0
 		top: 50%
 		margin-top: -170px
-		&:after
-			content: ""
-			width: 546px
-			height: 210px
-			background: url("../img/header_descr.png")
-			position: absolute
-			top: 0
-			left: 50%
-			margin-left: -273px
+		// &:after
+		// 	content: ""
+		// 	width: 546px
+		// 	height: 210px
+		// 	background: url("../img/header_descr.png")
+		// 	position: absolute
+		// 	top: 0
+		// 	left: 50%
+		// 	margin-left: -273px
+	.header__descr-title
+		margin-bottom: 70px
+		font-size: 84px
+		line-height: 1
+		font-weight: normal
+		color: #FFF
+		text-align: center
+		+ptb
 	.header__descrmeta
-		padding-top: 230px
+		// padding-top: 230px
+		margin-top: -130px
+		position: relative
+		z-index: 999
 		font-size: 23px
 		line-height: 33px
 		text-align: center
@@ -1086,5 +1098,54 @@ body
 			font-size: 14px
 		&:focus
 			+placeholder
-				color: transparent 
-		
+				color: transparent
+// slider
+// --------------------------------------------------
+.gallery
+	position: absolute
+	width: 100%
+	top: 50%
+	margin-top: -200px
+.gallery, .js-flexslider, .js-flexslider-in
+	height: 400px
+.gallery-control-nav
+	position: relative
+	top: -170px
+	z-index: 999
+	font-size: 0
+	text-align: center
+	li
+		// margin-left: 20px
+		width: 34px
+		height: 14px
+		line-height: 14px
+		text-align: center
+		display: inline-block
+		vertical-align: middle
+		font-size: 0
+		cursor: pointer
+		&:first-child
+			margin-left: 0
+	a
+		display: inline-block
+		vertical-align: middle
+		margin: 0 auto
+		width: 10px
+		height: 10px
+		+border-radius(50%)
+		background: #FFF
+		+opacity(0.3)
+		+transition(opacity linear 1)
+		border: 2px solid transparent
+		+box
+		&:hover
+			+opacity(1)
+			+transition(opacity linear 1)
+		&.gallery-active
+			width: 14px
+			height: 14px
+			border: 2px solid #fff
+			+opacity(1)
+.gallery-item
+	height: 400px
+	
