@@ -48,7 +48,7 @@ body.inner { background: white; }
 
 .wrap { background: white; }
 
-.header { min-height: 590px; background: url("../img/v4-header-bg.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.header { width: 100%; min-height: 590px; background: url("../img/v4-header-bg.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 .header .header__in { min-height: 590px; position: relative; }
 .header .header__descr { height: 340px; position: absolute; z-index: 100; left: 0; right: 0; top: 50%; margin-top: -170px; }
 .header .header__descr-title { margin-bottom: 70px; font-size: 84px; line-height: 1; font-weight: normal; color: white; text-align: center; font-family: "PT_Serif-Web-Bold", arial, sans-serif; font-weight: normal; font-style: normal; }
