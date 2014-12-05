@@ -35,7 +35,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 .header .header__in, .footer .footer__in, .wecan .wecan__in, .portfolio .portfolio__in, .slide .slide__in, .actuality .actuality__in, .twitter .twitter__in, .blog .blog__in, .inner .inner__headerin, .inner .inner__pagein, .inner-footer .inner-footer__in { width: 930px; margin-left: auto; margin-right: auto; }
 
-body { background: #f1f1e5; font-family: "PT_Serif-Web-Regular", arial, sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 1.4; }
+body { min-width: 960px; background: #f1f1e5; font-family: "PT_Serif-Web-Regular", arial, sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 1.4; }
 body.inner { background: white; }
 
 .title { padding-bottom: 74px; font-family: "PT_Serif-Web-Bold", arial, sans-serif; font-weight: normal; font-style: normal; font-size: 40px; color: #424242; text-align: center; position: relative; }
